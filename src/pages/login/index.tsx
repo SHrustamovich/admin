@@ -5,7 +5,6 @@ import { formLabel } from "../../utils/form-label";
 import { urls } from "../../constanta/urls";
 import { useCreate } from "../../api";
 import { useAuthContext } from "../../context/AuthProvider";
-import { FacebookOutlined } from "@ant-design/icons";
 
 const LoginPage = () => {
     const { setUserData } = useAuthContext();
