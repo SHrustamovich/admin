@@ -1,7 +1,7 @@
 import axios from "axios";
-import { baseURL } from "../../constanta/urls";
 import { responseInterceptor } from "./ResponseInteseptor";
 import { errorInterceptor } from "./ErrorInteseptor";
+import { baseURL } from "~constanta/urls";
 
 
 export const Api = axios.create({

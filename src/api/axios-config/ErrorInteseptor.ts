@@ -3,7 +3,7 @@ import axios from "axios";
 import { Api } from "./index";
 
 import type { IRefreshPostResponse } from "./types";
-import { baseURL, urls } from "../../constanta/urls";
+import { baseURL, urls } from "~constanta/urls";
 
 export const errorInterceptor = async (error: any) => {
     const originalConfig = error.config;

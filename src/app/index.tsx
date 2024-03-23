@@ -1,4 +1,4 @@
-import { useAuthContext } from "../context/AuthProvider";
+import { useAuthContext } from "~context/AuthProvider";
 import AppRouter from "./AppRouter";
 import AuthRoutes from "./AuthRouters";
 
