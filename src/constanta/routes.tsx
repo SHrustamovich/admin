@@ -1,7 +1,17 @@
 import { ReactNode } from "react";
-import { Appearance, Coupons, Dashboard, FlashSales, Localizations, Pages, Products, Reports, Sales, Settings, Tools, Users } from "~pages/index";
-
-
+import {
+    Appearance,
+    Coupons,
+    Dashboard,
+    FlashSales,
+    Order,
+    Pages,
+    Products,
+    Reports,
+    Sellers,
+    Tools,
+    Users,
+} from "~pages/index";
 
 interface IRouter {
     id: number;
@@ -22,52 +32,47 @@ export const router: IRouter[] = [
     },
     {
         id: 3,
-        path: "/sales",
-        element: <Sales />,
+        path: "/order",
+        element: <Order />,
     },
     {
         id: 4,
-        path: "/flashsales",
+        path: "/customers",
         element: <FlashSales />,
     },
     {
         id: 5,
-        path: "/coupons",
+        path: "/statistics",
         element: <Coupons />,
     },
     {
         id: 6,
-        path: "/pages",
+        path: "/reviews",
         element: <Pages />,
     },
     {
         id: 7,
-        path: "/users",
+        path: "/transactions",
         element: <Users />,
     },
     {
         id: 8,
-        path: "/localizations",
-        element: <Localizations />,
+        path: "/sellers",
+        element: <Sellers />,
     },
     {
         id: 9,
-        path: "/appearance",
+        path: "/offers",
         element: <Appearance />,
     },
     {
         id: 10,
-        path: "/tools",
+        path: "/appearance",
         element: <Tools />,
     },
     {
         id: 11,
-        path: "/reports",
-        element: <Reports />,
-    },
-    {
-        id: 12,
         path: "/settings",
-        element: <Settings />,
+        element: <Reports />,
     },
 ];

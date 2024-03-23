@@ -1,7 +1,7 @@
 import { lazy } from "react";
 
 const Dashboard = lazy(() => import("./Dashboard"));
-const Sales = lazy(() => import("./Sales"));
+const Order = lazy(() => import("./Order"));
 const FlashSales = lazy(() => import("./FlashSales"));
 const Coupons = lazy(() => import("./Coupons"));
 const Pages = lazy(() => import("./Pages"));
@@ -12,10 +12,11 @@ const Appearance = lazy(() => import("./Appearance"));
 const Tools = lazy(() => import("./Tools"));
 const Reports = lazy(() => import("./Reports"));
 const Settings = lazy(() => import("./Settings"));
+const Sellers = lazy(() => import("./Sellers"));
 
 export {
     Dashboard,
-    Sales,
+    Order,
     Products,
     FlashSales,
     Coupons,
@@ -26,4 +27,5 @@ export {
     Tools,
     Reports,
     Settings,
+    Sellers,
 };

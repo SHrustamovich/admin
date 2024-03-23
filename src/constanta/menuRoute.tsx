@@ -23,26 +23,44 @@ export const MenuLink: LinkType[] = [
     },
     {
         id: 3,
-        title: "Sales",
-        path: "/sales",
+        title: "Orders",
+        path: "/order",
         icon: <Icons.Sales />,
     },
     {
         id: 4,
-        title: "Flashsales",
-        path: "/flashsales",
+        title: "Customers",
+        path: "/customers",
         icon: <Icons.FlashSales />,
     },
     {
         id: 5,
-        title: "Coupons",
-        path: "/coupons",
+        title: "Statistics",
+        path: "/statistics",
         icon: <Icons.Coupons />,
     },
     {
         id: 6,
-        title: "Pages",
-        path: "/pages",
+        title: "Reviews",
+        path: "/reviews",
+        icon: <Icons.Pages />,
+    },
+    {
+        id: 7,
+        title: "Transactions",
+        path: "/transactions",
+        icon: <Icons.Pages />,
+    },
+    {
+        id: 8,
+        title: "Sellers",
+        path: "/sellers",
+        icon: <Icons.Pages />,
+    },
+    {
+        id: 9,
+        title: "Hot offers",
+        path: "/offers",
         icon: <Icons.Pages />,
     },
 ];
@@ -50,32 +68,14 @@ export const MenuLink: LinkType[] = [
 export const MenuSystem: LinkType[] = [
     {
         id: 1,
-        title: "Users",
-        path: "/users",
+        title: "Appearance",
+        path: "/appearance",
         icon: <Icons.Users />,
     },
     {
         id: 2,
-        title: "Localizations",
-        path: "/localizations",
-        icon: <Icons.Localizations />,
-    },
-    {
-        id: 3,
-        title: "Appearance",
-        path: "/appearance",
-        icon: <Icons.Appearance />,
-    },
-    {
-        id: 5,
-        title: "Reports",
-        path: "/reports",
-        icon: <Icons.Reports />,
-    },
-    {
-        id: 6,
         title: "Settings",
         path: "/settings",
-        icon: <Icons.Settings />,
+        icon: <Icons.Localizations />,
     },
 ];
