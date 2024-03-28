@@ -43,14 +43,17 @@ export const Icons = {
             {...props}>
             <defs>
                 <clipPath id='a'>
-                    <path fill='#fff' fillOpacity={0} d='M-.75 0h24v24h-24z' />
+                    <path
+                        fill='#fff'
+                        fillOpacity={0}
+                        d='M-.975 0H23.08v24H-.975z'
+                    />
                 </clipPath>
             </defs>
-            <path fill='none' d='M-.75 0h24v24h-24z' />
             <g clipPath='url(#a)'>
                 <path
-                    fill='#3167EB'
-                    d='M3.25 13h6c.55 0 1-.46 1-1V4c0-.55-.45-1-1-1h-6c-.56 0-1 .45-1 1v8c0 .54.44 1 1 1Zm0 8h6c.55 0 1-.46 1-1v-4c0-.55-.45-1-1-1h-6c-.56 0-1 .45-1 1v4c0 .54.44 1 1 1Zm10 0h6c.54 0 1-.46 1-1v-8c0-.55-.46-1-1-1h-6c-.55 0-1 .45-1 1v8c0 .54.45 1 1 1Zm-1-17v4c0 .54.45 1 1 1h6c.54 0 1-.46 1-1V4c0-.55-.46-1-1-1h-6c-.55 0-1 .45-1 1Z'
+                    fill='#AEB6CA'
+                    d='M8.6 20.79v-6h4.89v6c0 .66.55 1.21 1.22 1.21h3.67c.67 0 1.22-.55 1.22-1.21V9.99h.86c.56 0 .83-.69.4-1.05l-9-5.94c-.46-.41-1.17-.41-1.63 0l-9 5.94c-.42.36-.16 1.05.4 1.05h.86v10.8c0 .66.55 1.21 1.22 1.21h3.67c.67 0 1.22-.55 1.22-1.21Z'
                 />
             </g>
         </svg>
@@ -64,19 +67,18 @@ export const Icons = {
             {...props}>
             <defs>
                 <clipPath id='a'>
-                    <path fill='#fff' fillOpacity={0} d='M-.75 0h24v24h-24z' />
+                    <path fill='#fff' fillOpacity={0} d='M0 0h24v24H0z' />
                 </clipPath>
             </defs>
-            <path fill='none' d='M-.75 0h24v24h-24z' />
             <g clipPath='url(#a)'>
                 <path
                     fill='#AEB6CA'
-                    d='M21.25 9h-4.8l-4.38-6.58a1.01 1.01 0 0 0-1.67 0L6.02 9H1.25a.99.99 0 0 0-.96 1.27l2.54 9.27A2 2 0 0 0 4.75 21h13c.91 0 1.68-.63 1.92-1.46l2.55-9.27.03-.27c0-.56-.45-1-1-1ZM11.24 4.79 14.05 9H8.42l2.82-4.21ZM11.25 17c-1.11 0-2-.91-2-2 0-1.11.89-2 2-2a2 2 0 0 1 2 2c0 1.09-.9 2-2 2Z'
+                    d='M20 2.11H4c-1 0-2 .9-2 2v3.01c0 .72.42 1.34 1 1.69v11.3c0 1.1 1.1 2 2 2h14c.89 0 2-.9 2-2V8.81c.57-.35 1-.97 1-1.69V4.11c0-1.1-1-2-2-2Zm-6 12h-4c-.56 0-1-.45-1-1s.44-1 1-1h4c.55 0 1 .45 1 1s-.45 1-1 1Zm6-7H4v-3h16v3Z'
                 />
             </g>
         </svg>
     ),
-    Sales: (props: SVGProps<SVGSVGElement>) => (
+    Orders: (props: SVGProps<SVGSVGElement>) => (
         <svg
             xmlns='http://www.w3.org/2000/svg'
             width={24}
@@ -85,32 +87,18 @@ export const Icons = {
             {...props}>
             <defs>
                 <clipPath id='a'>
-                    <path fill='#fff' fillOpacity={0} d='M-.75 0h24v24h-24z' />
+                    <path fill='#fff' fillOpacity={0} d='M0 0h24v24H0z' />
                 </clipPath>
             </defs>
-            <path fill='none' d='M-.75 0h24v24h-24z' />
             <g clipPath='url(#a)'>
                 <path
                     fill='#AEB6CA'
-                    d='M11.25 2.22c-5.53 0-10 4.48-10 10s4.47 10 10 10c5.52 0 10-4.48 10-10s-4.48-10-10-10Zm1.4 16.09v.58c0 .73-.59 1.33-1.32 1.33h-.01c-.73 0-1.34-.6-1.34-1.33v-.6c-1.33-.28-2.51-1.01-3.01-2.24-.22-.55.2-1.16.81-1.16h.24c.36 0 .66.25.81.6.29.75 1.04 1.27 2.51 1.27 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.19-1.62-4.19-3.67 0-1.72 1.4-2.84 3.12-3.21v-.6c0-.73.6-1.33 1.33-1.33h.01c.73 0 1.32.6 1.32 1.33v.62c1.39.34 2.25 1.2 2.64 2.26.2.55-.22 1.13-.81 1.13h-.26c-.37 0-.67-.26-.77-.62-.23-.76-.86-1.25-2.12-1.25-1.5 0-2.41.68-2.41 1.64 0 .84.66 1.39 2.68 1.91 2.01.52 4.18 1.39 4.18 3.91-.02 1.83-1.4 2.83-3.14 3.16Z'
+                    d='M7 18c-1.11 0-1.99.9-1.99 2s.88 2 1.99 2c1.1 0 2-.9 2-2s-.9-2-2-2ZM1 3c0 .54.44 1 1 1h1l3.6 7.59-1.35 2.44C4.52 15.37 5.47 17 7 17h11c.54 0 1-.46 1-1 0-.55-.46-1-1-1H7l1.1-2h7.45c.74 0 1.4-.41 1.74-1.03l3.58-6.5c.38-.65-.1-1.47-.86-1.47H5.2l-.66-1.43A.99.99 0 0 0 3.63 2H2c-.56 0-1 .45-1 1Zm16 15c-1.11 0-1.99.9-1.99 2s.88 2 1.99 2c1.1 0 2-.9 2-2s-.9-2-2-2Z'
                 />
             </g>
         </svg>
     ),
-    FlashSales: (props: SVGProps<SVGSVGElement>) => (
-        <svg
-            xmlns='http://www.w3.org/2000/svg'
-            width={9}
-            height={19}
-            fill='none'
-            {...props}>
-            <path
-                fill='#AEB6CA'
-                d='M-.75 1v9c0 .54.44 1 1 1h2v7.14c0 .52.66.69.92.25l5.2-8.89A.995.995 0 0 0 7.51 8H5.25l2.48-6.65A.989.989 0 0 0 6.81 0H.25c-.56 0-1 .45-1 1Z'
-            />
-        </svg>
-    ),
-    Coupons: (props: SVGProps<SVGSVGElement>) => (
+    Customers: (props: SVGProps<SVGSVGElement>) => (
         <svg
             xmlns='http://www.w3.org/2000/svg'
             width={24}
@@ -119,19 +107,18 @@ export const Icons = {
             {...props}>
             <defs>
                 <clipPath id='a'>
-                    <path fill='#fff' fillOpacity={0} d='M-.75 0h24v24h-24z' />
+                    <path fill='#fff' fillOpacity={0} d='M0 0h24v24H0z' />
                 </clipPath>
             </defs>
-            <path fill='none' d='M-.75 0h24v24h-24z' />
             <g clipPath='url(#a)'>
                 <path
                     fill='#AEB6CA'
-                    d='m20.65 11.58-9-9c-.35-.36-.85-.58-1.4-.58h-7c-1.11 0-2 .89-2 2v7c0 .54.21 1.04.59 1.41l9 9c.36.36.86.59 1.41.59.55 0 1.05-.23 1.4-.59l7-7a1.97 1.97 0 0 0 0-2.83ZM4.75 7c-.84 0-1.5-.67-1.5-1.5 0-.84.66-1.5 1.5-1.5.83 0 1.5.66 1.5 1.5 0 .83-.67 1.5-1.5 1.5Z'
+                    d='M16 11c1.65 0 2.99-1.34 2.99-3A2.994 2.994 0 1 0 13 8c0 1.66 1.34 3 3 3Zm-8 0c1.65 0 2.99-1.34 2.99-3A2.994 2.994 0 1 0 5 8c0 1.66 1.34 3 3 3Zm0 2c-2.34 0-7 1.17-7 3.5V18c0 .54.44 1 1 1h12c.55 0 1-.46 1-1v-1.5c0-2.33-4.67-3.5-7-3.5Zm8 0c-.29 0-.63.02-.97.05.02.01.03.03.04.04 1.13.83 1.93 1.94 1.93 3.41V18c0 .35-.08.69-.18 1H22c.55 0 1-.46 1-1v-1.5c0-2.33-4.67-3.5-7-3.5Z'
                 />
             </g>
         </svg>
     ),
-    Pages: (props: SVGProps<SVGSVGElement>) => (
+    Statistics: (props: SVGProps<SVGSVGElement>) => (
         <svg
             xmlns='http://www.w3.org/2000/svg'
             width={24}
@@ -140,19 +127,18 @@ export const Icons = {
             {...props}>
             <defs>
                 <clipPath id='a'>
-                    <path fill='#fff' fillOpacity={0} d='M-.75 0h24v24h-24z' />
+                    <path fill='#fff' fillOpacity={0} d='M0 0h24v24H0z' />
                 </clipPath>
             </defs>
-            <path fill='none' d='M-.75 0h24v24h-24z' />
             <g clipPath='url(#a)'>
                 <path
                     fill='#AEB6CA'
-                    d='M5.25 2c-1.11 0-1.99.89-1.99 2l-.01 16c0 1.1.88 2 1.98 2h12.02c1.1 0 2-.9 2-2V8.83c0-.54-.21-1.04-.6-1.42l-4.82-4.83c-.37-.38-.88-.58-1.42-.58H5.25Zm7 6V3.5l5.5 5.5h-4.5c-.55 0-1-.46-1-1Z'
+                    d='M6.27 20.11H2.94c-.52 0-.94-.43-.94-.95V9.72c0-.52.42-.95.94-.95h3.33c.52 0 .95.43.95.95v9.44c0 .52-.43.95-.95.95Zm6.89-17H9.83c-.52 0-.95.42-.95.94v15.11c0 .52.43.95.95.95h3.33c.52 0 .95-.43.95-.95V4.05c0-.52-.43-.94-.95-.94Zm6.88 7.55h-3.32c-.52 0-.95.43-.95.95v7.55c0 .52.43.95.95.95h3.32c.53 0 .96-.43.96-.95v-7.55c0-.52-.43-.95-.96-.95Z'
                 />
             </g>
         </svg>
     ),
-    Users: (props: SVGProps<SVGSVGElement>) => (
+    Reviews: (props: SVGProps<SVGSVGElement>) => (
         <svg
             xmlns='http://www.w3.org/2000/svg'
             width={24}
@@ -161,23 +147,18 @@ export const Icons = {
             {...props}>
             <defs>
                 <clipPath id='a'>
-                    <path
-                        fill='#fff'
-                        fillOpacity={0}
-                        d='M-.75-.96h24v24h-24z'
-                    />
+                    <path fill='#fff' fillOpacity={0} d='M0 0h24v24H0z' />
                 </clipPath>
             </defs>
-            <path fill='none' d='M-.75-.96h24v24h-24z' />
             <g clipPath='url(#a)'>
                 <path
                     fill='#AEB6CA'
-                    d='M15.25 10.03c1.65 0 2.99-1.34 2.99-3a2.994 2.994 0 1 0-5.99 0c0 1.66 1.34 3 3 3Zm-8 0c1.65 0 2.99-1.34 2.99-3a2.994 2.994 0 1 0-5.99 0c0 1.66 1.34 3 3 3Zm0 2c-2.34 0-7 1.17-7 3.5v1.5c0 .55.44 1 1 1h12c.55 0 1-.45 1-1v-1.5c0-2.33-4.67-3.5-7-3.5Zm8 0c-.29 0-.63.02-.97.05.02.01.03.03.04.04 1.14.83 1.93 1.94 1.93 3.41v1.5c0 .35-.08.69-.18 1h5.18c.55 0 1-.45 1-1v-1.5c0-2.33-4.67-3.5-7-3.5Z'
+                    d='M20 2H4c-1.11 0-2 .89-2 2v18l4-4h14c1.1 0 2-.9 2-2V4a2 2 0 0 0-2-2Zm-1 11-2.5-1.5L14 13V5h5v8Z'
                 />
             </g>
         </svg>
     ),
-    Localizations: (props: SVGProps<SVGSVGElement>) => (
+    Transactions: (props: SVGProps<SVGSVGElement>) => (
         <svg
             xmlns='http://www.w3.org/2000/svg'
             width={24}
@@ -186,18 +167,53 @@ export const Icons = {
             {...props}>
             <defs>
                 <clipPath id='a'>
-                    <path
-                        fill='#fff'
-                        fillOpacity={0}
-                        d='M-.75-.96h24v24h-24z'
-                    />
+                    <path fill='#fff' fillOpacity={0} d='M0 0h24v24H0z' />
                 </clipPath>
             </defs>
-            <path fill='none' d='M-.75-.96h24v24h-24z' />
             <g clipPath='url(#a)'>
                 <path
                     fill='#AEB6CA'
-                    d='M11.24 1.03c-5.53 0-9.99 4.48-9.99 10s4.46 10 9.99 10 10.01-4.48 10.01-10-4.48-10-10.01-10Zm6.92 6h-2.94c-.33-1.25-.79-2.45-1.38-3.56 1.83.63 3.36 1.91 4.32 3.56Zm-6.91-3.96c.83 1.2 1.48 2.53 1.9 3.96H9.34a13.82 13.82 0 0 1 1.91-3.96Zm-7.74 9.96c-.16-.64-.26-1.31-.26-2s.1-1.36.26-2h3.37c-.07.66-.13 1.32-.13 2 0 .68.06 1.34.13 2H3.51Zm.82 2h2.95c.32 1.25.78 2.45 1.37 3.56a8 8 0 0 1-4.32-3.56Zm2.95-8H4.33a8 8 0 0 1 4.32-3.56C8.06 4.58 7.6 5.78 7.28 7.03Zm3.97 11.96a13.82 13.82 0 0 1-1.91-3.96h3.81c-.42 1.43-1.07 2.76-1.9 3.96Zm2.34-5.96H8.9c-.08-.66-.15-1.32-.15-2 0-.68.07-1.35.15-2h4.69c.08.65.16 1.32.16 2 0 .68-.08 1.34-.16 2Zm.25 5.56c.59-1.11 1.05-2.31 1.38-3.56h2.94a8.044 8.044 0 0 1-4.32 3.56Zm1.77-5.56c.07-.66.14-1.32.14-2 0-.68-.07-1.34-.14-2h3.38c.15.64.26 1.31.26 2s-.11 1.36-.26 2h-3.38Z'
+                    d='M23 8v10c0 1.1-.9 2-2 2H5c-.56 0-1-.46-1-1 0-.55.44-1 1-1h16V8c0-.55.45-1 1-1s1 .45 1 1ZM4 16c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h12c1.65 0 3 1.34 3 3v7c0 1.1-.9 2-2 2H4Zm3-6c0 1.66 1.34 3 3 3 1.65 0 3-1.34 3-3s-1.35-3-3-3c-1.66 0-3 1.34-3 3Z'
+                />
+            </g>
+        </svg>
+    ),
+    Sellers: (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width={24}
+            height={24}
+            fill='none'
+            {...props}>
+            <defs>
+                <clipPath id='a'>
+                    <path fill='#fff' fillOpacity={0} d='M0 0h24v24H0z' />
+                </clipPath>
+            </defs>
+            <g clipPath='url(#a)'>
+                <path
+                    fill='#AEB6CA'
+                    d='M11.99 2C6.46 2 2 6.47 2 12c0 5.52 4.46 10 9.99 10S22 17.52 22 12c0-5.53-4.48-10-10.01-10Zm6.92 6h-2.94c-.33-1.25-.79-2.45-1.38-3.57 1.83.63 3.36 1.91 4.32 3.57ZM12 4.04c.83 1.19 1.48 2.52 1.9 3.96h-3.81c.43-1.44 1.07-2.77 1.91-3.96ZM4.26 14C4.1 13.36 4 12.68 4 12c0-.69.1-1.36.26-2h3.37c-.07.66-.13 1.31-.13 2 0 .68.06 1.34.13 2H4.26Zm.82 2h2.95c.32 1.25.78 2.45 1.37 3.56A8 8 0 0 1 5.08 16Zm2.95-8H5.08A7.975 7.975 0 0 1 9.4 4.43C8.81 5.55 8.35 6.75 8.03 8ZM12 19.95c-.84-1.19-1.48-2.52-1.91-3.95h3.81c-.42 1.43-1.07 2.76-1.9 3.95ZM14.34 14H9.65c-.08-.66-.15-1.32-.15-2 0-.69.07-1.35.15-2h4.69c.08.65.16 1.31.16 2 0 .68-.08 1.34-.16 2Zm.25 5.56c.59-1.11 1.05-2.31 1.38-3.56h2.94a8.044 8.044 0 0 1-4.32 3.56ZM16.36 14c.07-.66.14-1.32.14-2 0-.69-.07-1.34-.14-2h3.38c.15.64.26 1.31.26 2 0 .68-.11 1.36-.26 2h-3.38Z'
+                />
+            </g>
+        </svg>
+    ),
+    HotOffers: (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width={24}
+            height={24}
+            fill='none'
+            {...props}>
+            <defs>
+                <clipPath id='a'>
+                    <path fill='#fff' fillOpacity={0} d='M0 0h24v24H0z' />
+                </clipPath>
+            </defs>
+            <g clipPath='url(#a)'>
+                <path
+                    fill='#AEB6CA'
+                    d='m21.4 11.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.11 0-2 .89-2 2v7c0 .55.21 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.4-.59l7-7c.38-.36.6-.86.6-1.41 0-.55-.23-1.06-.6-1.42ZM5.5 7C4.66 7 4 6.33 4 5.5S4.66 4 5.5 4C6.33 4 7 4.67 7 5.5S6.33 7 5.5 7Z'
                 />
             </g>
         </svg>
@@ -205,69 +221,55 @@ export const Icons = {
     Appearance: (props: SVGProps<SVGSVGElement>) => (
         <svg
             xmlns='http://www.w3.org/2000/svg'
-            width={24}
-            height={24}
+            width={32}
+            height={32}
             fill='none'
             {...props}>
             <defs>
-                <clipPath id='a'>
-                    <path
-                        fill='#fff'
-                        fillOpacity={0}
-                        d='M-.75-.96h24v24h-24z'
-                    />
+                <clipPath id='b'>
+                    <path fill='#fff' fillOpacity={0} d='M4 0h24v24H4z' />
                 </clipPath>
-            </defs>
-            <path fill='none' d='M-.75-.96h24v24h-24z' />
-            <g clipPath='url(#a)'>
-                <path
-                    fill='#AEB6CA'
-                    d='M6.25 13.03c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .91 1.22 2.48 2 4 2 2.2 0 4-1.79 4-4 0-1.66-1.35-3-3-3Zm13.7-9.37-1.33-1.34c-.39-.39-1.02-.39-1.42 0l-8.95 8.96L11 14.03l8.95-8.96c.4-.39.4-1.02 0-1.41Z'
-                />
-            </g>
-        </svg>
-    ),
-    Tools: (props: SVGProps<SVGSVGElement>) => (
-        <svg
-            xmlns='http://www.w3.org/2000/svg'
-            width={24}
-            height={24}
-            fill='none'
-            {...props}>
-            <defs>
-                <clipPath id='a'>
-                    <path
-                        fill='#fff'
-                        fillOpacity={0}
-                        d='M-.75-.96h24v24h-24z'
+                <filter
+                    id='a'
+                    width={32}
+                    height={32}
+                    x={0}
+                    y={0}
+                    colorInterpolationFilters='sRGB'
+                    filterUnits='userSpaceOnUse'>
+                    <feFlood floodOpacity={0} result='BackgroundImageFix' />
+                    <feColorMatrix
+                        in='SourceAlpha'
+                        result='hardAlpha'
+                        values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
                     />
-                </clipPath>
-            </defs>
-            <path fill='none' d='M-.75-.96h24v24h-24z' />
-        </svg>
-    ),
-    Reports: (props: SVGProps<SVGSVGElement>) => (
-        <svg
-            xmlns='http://www.w3.org/2000/svg'
-            width={24}
-            height={24}
-            fill='none'
-            {...props}>
-            <defs>
-                <clipPath id='a'>
-                    <path
-                        fill='#fff'
-                        fillOpacity={0}
-                        d='M-.75-.96h24v24h-24z'
+                    <feOffset dy={4} />
+                    <feGaussianBlur stdDeviation={1.333} />
+                    <feComposite
+                        in2='hardAlpha'
+                        k2={-1}
+                        k3={1}
+                        operator='out'
                     />
-                </clipPath>
+                    <feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0' />
+                    <feBlend
+                        in2='BackgroundImageFix'
+                        result='effect_dropShadow_1'
+                    />
+                    <feBlend
+                        in='SourceGraphic'
+                        in2='effect_dropShadow_1'
+                        result='shape'
+                    />
+                </filter>
             </defs>
-            <path fill='none' d='M-.75-.96h24v24h-24z' />
-            <g clipPath='url(#a)'>
-                <path
-                    fill='#AEB6CA'
-                    d='M1.97 20.03h18.54c.77 0 1.25-.83.86-1.5l-9.27-16a.996.996 0 0 0-1.73 0l-9.27 16c-.38.67.1 1.5.87 1.5Zm10.28-3h-2v-2h2v2Zm-1-4c-.55 0-1-.45-1-1v-2c0-.55.45-1 1-1 .54 0 1 .45 1 1v2c0 .55-.46 1-1 1Z'
-                />
+            <g filter='url(#a)'>
+                <g clipPath='url(#b)'>
+                    <path
+                        fill='#AEB6CA'
+                        d='M11 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .91 1.21 2.48 2 4 2 2.21 0 4-1.8 4-4 0-1.66-1.35-3-3-3Zm13.71-9.37-1.34-1.35a.996.996 0 0 0-1.41 0L13 12.25 15.75 15l8.96-8.97a.984.984 0 0 0 0-1.4Z'
+                    />
+                </g>
             </g>
         </svg>
     ),

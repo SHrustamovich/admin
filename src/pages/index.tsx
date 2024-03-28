@@ -13,6 +13,11 @@ const Tools = lazy(() => import("./Tools"));
 const Reports = lazy(() => import("./Reports"));
 const Settings = lazy(() => import("./Settings"));
 const Sellers = lazy(() => import("./Sellers"));
+const Customers = lazy(() => import("./Customers"));
+const Statistics = lazy(() => import("./Statistics"));
+const Reviews = lazy(() => import("./Reviews"));
+const Transactions = lazy(() => import("./Transactions"));
+const HotOffers = lazy(() => import("./HotOffers"));
 
 export {
     Dashboard,
@@ -28,4 +33,9 @@ export {
     Reports,
     Settings,
     Sellers,
+    Customers,
+    Statistics,
+    Reviews,
+    Transactions,
+    HotOffers,
 };
