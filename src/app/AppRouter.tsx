@@ -12,6 +12,7 @@ import { Content, Header } from "antd/es/layout/layout";
 import { FC, Suspense, useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import Lazy from "~components/Lazy";
+import ProfileModal from "~components/profileModal";
 import { Icons } from "~constanta/icons";
 import { MenuLink, MenuSystem } from "~constanta/menuRoute";
 import { router } from "~constanta/routes";
@@ -19,6 +20,19 @@ import { router } from "~constanta/routes";
 const AppRouter: FC = () => {
     const [collapsed, setCollapsed] = useState<boolean>(false);
     const [open, setOpen] = useState<boolean>(false);
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
+    const showModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const handleOk = () => {
+        setIsModalOpen(false);
+    };
+
+    const handleCancel = () => {
+        setIsModalOpen(false);
+    };
 
     return (
         <div style={{ height: "100vh" }}>
@@ -36,21 +50,26 @@ const AppRouter: FC = () => {
                             background: "#fff",
                             color: "#FFF",
                         }}>
-                        <div className='demo-logo-vertical' />
                         <div className='flex justify-between items-center pl-[14px]'>
-                            <Icons.Logo />
+                            {!collapsed && <Icons.Logo />}
                             <Button
                                 type='text'
                                 icon={
                                     collapsed ? (
-                                        <MenuUnfoldOutlined />
+                                        <MenuUnfoldOutlined
+                                            style={{
+                                                display: "flex",
+                                                justifyContent: "center",
+                                                alignItems: "center",
+                                            }}
+                                        />
                                     ) : (
                                         <MenuFoldOutlined />
                                     )
                                 }
                                 onClick={() => setCollapsed(!collapsed)}
                                 style={{
-                                    fontSize: "16px",
+                                    fontSize: "24px",
                                     width: 64,
                                     height: 64,
                                 }}
@@ -68,11 +87,7 @@ const AppRouter: FC = () => {
                                         onClick={() => setOpen(!open)}>
                                         <div className='flex items-center justify-between'>
                                             <Link to={path}>{title}</Link>
-                                            {open ? (
-                                                <Icons.Up />
-                                            ) : (
-                                                <Icons.Down />
-                                            )}
+                                            {id === 2 && <Icons.Down />}
                                         </div>
                                     </Menu.Item>
                                 ))}
@@ -92,17 +107,14 @@ const AppRouter: FC = () => {
                                         onClick={() => setOpen(!open)}>
                                         <div className='flex items-center justify-between'>
                                             <Link to={path}>{title}</Link>
-                                            {open ? (
-                                                <Icons.Up />
-                                            ) : (
-                                                <Icons.Down />
-                                            )}
+                                            {id === 1 && <Icons.Down />}
                                         </div>
                                     </Menu.Item>
                                 ))}
                             </Menu>
                         </div>
                     </Sider>
+
                     <Layout>
                         <Header
                             style={{
@@ -126,7 +138,11 @@ const AppRouter: FC = () => {
                                 <SunOutlined className='text-[24px]' />
                                 <BellOutlined className='text-[24px]' />
                                 <div className='flex justify-start items-center'>
-                                    <Avatar size={38} icon={<UserOutlined />} />
+                                    <Avatar
+                                        size={38}
+                                        icon={<UserOutlined />}
+                                        onClick={showModal}
+                                    />
                                     <Icons.Down />
                                 </div>
                             </div>
@@ -149,6 +165,11 @@ const AppRouter: FC = () => {
                         </Content>
                     </Layout>
                 </Layout>
+                <ProfileModal
+                    isOpen={isModalOpen}
+                    onOk={handleOk}
+                    onCancel={handleCancel}
+                />
             </ConfigProvider>
         </div>
     );
