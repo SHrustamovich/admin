@@ -7,10 +7,10 @@ const OrderList = () => {
         id: number;
         name: string;
         age: number;
-        email: string; // Adding email field
-        total: number; // Adding total field
-        status: string; // Adding status field
-        date: string; // Adding date field
+        email: string;
+        total: number;
+        status: string;
+        date: string;
     }
 
     const columns: TableProps<DataType>["columns"] = [
@@ -31,22 +31,22 @@ const OrderList = () => {
             key: "age",
         },
         {
-            title: "Email", // New column for email
+            title: "Email",
             dataIndex: "email",
             key: "email",
         },
         {
-            title: "Total", // New column for total
+            title: "Total",
             dataIndex: "total",
             key: "total",
         },
         {
-            title: "Status", // New column for status
+            title: "Status",
             dataIndex: "status",
             key: "status",
         },
         {
-            title: "Date", // New column for date
+            title: "Date",
             dataIndex: "date",
             key: "date",
         },
@@ -68,34 +68,33 @@ const OrderList = () => {
             id: 1,
             name: "John Brown",
             age: 32,
-            email: "john@example.com", // Adding email
-            total: 100, // Adding total
-            status: "Pending", // Adding status
-            date: "2024-03-29", // Adding date
+            email: "john@example.com",
+            total: 100,
+            status: "Pending",
+            date: "2024-03-29",
         },
         {
             key: "2",
             id: 2,
             name: "Jim Green",
             age: 42,
-            email: "jim@example.com", // Adding email
-            total: 200, // Adding total
-            status: "Delivered", // Adding status
-            date: "2024-03-30", // Adding date
+            email: "jim@example.com",
+            total: 200,
+            status: "Delivered",
+            date: "2024-03-30",
         },
         {
             key: "3",
             id: 3,
             name: "Joe Black",
             age: 32,
-            email: "joe@example.com", // Adding email
-            total: 150, // Adding total
-            status: "Processing", // Adding status
-            date: "2024-03-31", // Adding date
+            email: "joe@example.com",
+            total: 150,
+            status: "Processing",
+            date: "2024-03-31",
         },
     ];
 
-    // Adding ids
     data.forEach((item, index) => {
         item.id = index + 1;
     });

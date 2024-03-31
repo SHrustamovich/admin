@@ -95,7 +95,6 @@ const AppRouter: FC = () => {
                         </div>
                         <hr />
                         <div className=''>
-                            <p className='text-[#000] pl-[25px]'>System</p>
                             <Menu
                                 theme='light'
                                 mode='inline'
