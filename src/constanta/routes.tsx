@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
-import HotOffers from "~pages/HotOffers";
 import {
     Appearance,
     Customers,
     Dashboard,
+    HotOffers,
     Order,
     Products,
     Reviews,

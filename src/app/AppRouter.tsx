@@ -77,21 +77,48 @@ const AppRouter: FC = () => {
                         </div>
                         <div>
                             <Menu
-                                theme='light'
+                                className='text-white active:text-white'
+                                style={{ border: "0" }}
                                 mode='inline'
-                                defaultSelectedKeys={["1"]}>
-                                {MenuLink.map(({ id, title, path, icon }) => (
-                                    <Menu.Item
-                                        key={id}
-                                        icon={icon}
-                                        onClick={() => setOpen(!open)}>
-                                        <div className='flex items-center justify-between'>
-                                            <Link to={path}>{title}</Link>
-                                            {id === 2 && <Icons.Down />}
-                                        </div>
-                                    </Menu.Item>
-                                ))}
-                            </Menu>
+                                items={MenuLink.map(
+                                    ({ id, icon, path, title, children }) => {
+                                        if (children) {
+                                            return {
+                                                key: id,
+                                                label: (
+                                                    <Link
+                                                        to={path}
+                                                        className=''>
+                                                        {title}
+                                                    </Link>
+                                                ),
+                                                icon: icon,
+                                                children: children.map(
+                                                    ({ id, path, title }) => ({
+                                                        key: id,
+                                                        label: (
+                                                            <Link
+                                                                className='hover:text-white visited:text-white'
+                                                                to={path}>
+                                                                {title}
+                                                            </Link>
+                                                        ),
+                                                    })
+                                                ),
+                                            };
+                                        }
+                                        return {
+                                            key: id,
+                                            label: (
+                                                <Link to={path} className=''>
+                                                    {title}
+                                                </Link>
+                                            ),
+                                            icon: icon,
+                                        };
+                                    }
+                                )}
+                            />
                         </div>
                         <hr />
                         <div className=''>
