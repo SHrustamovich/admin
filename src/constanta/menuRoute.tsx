@@ -8,7 +8,11 @@ export interface LinkType {
     icon: ReactNode;
 }
 
-export const MenuLink: LinkType[] = [
+interface IMenu extends LinkType {
+    children?: Omit<LinkType, "icon">[];
+}
+
+export const MenuLink: IMenu[] = [
     {
         id: 1,
         title: "Dashboard",
@@ -20,6 +24,28 @@ export const MenuLink: LinkType[] = [
         title: "Products",
         path: "/products",
         icon: <Icons.Products />,
+        children: [
+            {
+                id: 1,
+                title: "Add product",
+                path: "/addproduct",
+            },
+            {
+                id: 2,
+                title: "Product list",
+                path: "/productlist",
+            },
+            {
+                id: 3,
+                title: "Categories",
+                path: "/categories",
+            },
+            {
+                id: 4,
+                title: "Brands",
+                path: "/brands",
+            },
+        ],
     },
     {
         id: 3,

@@ -7,7 +7,7 @@ import {
     Order,
     Pages,
     Products,
-    Reports,
+    Reviews,
     Sellers,
     Tools,
     Users,
@@ -46,11 +46,6 @@ export const router: IRouter[] = [
         element: <Coupons />,
     },
     {
-        id: 6,
-        path: "/reviews",
-        element: <Pages />,
-    },
-    {
         id: 7,
         path: "/transactions",
         element: <Users />,
@@ -72,7 +67,7 @@ export const router: IRouter[] = [
     },
     {
         id: 11,
-        path: "/settings",
-        element: <Reports />,
+        path: "/reviews",
+        element: <Reviews />,
     },
 ];

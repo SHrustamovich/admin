@@ -10,7 +10,7 @@ const Users = lazy(() => import("./Users"));
 const Localizations = lazy(() => import("./Localizations"));
 const Appearance = lazy(() => import("./Appearance"));
 const Tools = lazy(() => import("./Tools"));
-const Reports = lazy(() => import("./Reports"));
+const Reviews = lazy(() => import("./Reviews"));
 const Settings = lazy(() => import("./Settings"));
 const Sellers = lazy(() => import("./Sellers"));
 
@@ -25,7 +25,7 @@ export {
     Localizations,
     Appearance,
     Tools,
-    Reports,
+    Reviews,
     Settings,
     Sellers,
 };
