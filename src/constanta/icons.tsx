@@ -343,4 +343,30 @@ export const Icons = {
             </g>
         </svg>
     ),
+    export: (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            {...props}
+            width={20}
+            height={20}>
+            <path
+                fill='#AEB6CA'
+                d='M16.12 4.36C15.55 1.49 13.03-.67 10-.67A6.27 6.27 0 0 0 4.45 2.7C1.95 2.96 0 5.09 0 7.66c0 2.76 2.24 5 5 5h10.83c2.3 0 4.17-1.86 4.17-4.16 0-2.2-1.71-3.99-3.88-4.14Zm-4.46 2.47v3.33H8.33V6.83h-2.5L9.7 2.95c.17-.16.43-.16.59 0l3.87 3.88h-2.5Z'
+            />
+        </svg>
+    ),
+    import: (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            {...props}
+            width={20}
+            height={20}>
+            <path
+                fill='#AEB6CA'
+                d='M15.59 4.36A6.246 6.246 0 0 0 3.92 2.7 4.988 4.988 0 0 0-.54 7.66c0 2.76 2.24 5 5 5H15.3c2.3 0 4.16-1.86 4.16-4.16 0-2.2-1.71-3.99-3.87-4.14Zm-1.96 2.47L9.75 10.7c-.16.17-.42.17-.59 0L5.3 6.83h2.5V3.5h3.33v3.33h2.5Z'
+            />
+        </svg>
+    ),
 };

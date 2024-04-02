@@ -26,7 +26,7 @@ const Sellers = () => {
                         <DatePicker />
                     </Flex>
                 </Flex>
-                <SellersCard/>
+                <SellersCard />
             </div>
         </div>
     );
