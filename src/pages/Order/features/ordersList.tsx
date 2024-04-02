@@ -2,7 +2,7 @@ import { Button, Space, Table } from "antd";
 import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
 import { useState } from "react";
 
-const TransactionsList = () => {
+const OrdersList = () => {
     const generateRandomID = (): number => {
         return Math.floor(1000 + Math.random() * 9000);
     };
@@ -143,4 +143,4 @@ const TransactionsList = () => {
     );
 };
 
-export default TransactionsList;
+export default OrdersList;

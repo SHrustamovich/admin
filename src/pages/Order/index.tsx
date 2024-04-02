@@ -2,7 +2,7 @@ import { DatePicker, Flex, Input, Select } from "antd";
 import TransactionsHeader from "./features/ordersHeader";
 import TransactionsList from "./features/ordersList";
 
-const Transactions = () => {
+const Orders = () => {
     return (
         <div className='w-full p-[6px]'>
             <TransactionsHeader />
@@ -60,4 +60,4 @@ const Transactions = () => {
     );
 };
 
-export default Transactions;
+export default Orders;

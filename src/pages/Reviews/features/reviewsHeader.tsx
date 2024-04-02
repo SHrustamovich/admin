@@ -1,6 +1,6 @@
 import { Flex } from "antd";
 
-const TransactionsHeader = () => {
+const ReviewsHeader = () => {
     return (
         <Flex justify='space-between' align='center' className='w-full'>
             <h1 className='h1 text-2xl font-semibold leading-[22px]'>
@@ -9,4 +9,4 @@ const TransactionsHeader = () => {
         </Flex>
     );
 };
-export default TransactionsHeader;
+export default ReviewsHeader;

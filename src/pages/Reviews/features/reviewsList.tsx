@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button, Table } from "antd";
 import { StarFilled, StarOutlined, MoreOutlined } from "@ant-design/icons";
 
-const TransactionsList = () => {
+const ReviewsList = () => {
     const [selectionType, setSelectionType] = useState<"checkbox">("checkbox");
 
     interface DataType {
@@ -120,4 +120,4 @@ const TransactionsList = () => {
     );
 };
 
-export default TransactionsList;
+export default ReviewsList;
