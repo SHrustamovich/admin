@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { DatePicker, Input, Select, Table } from "antd";
-import { ReviewsData } from "./reviewsdata";
+import { ReviewsData } from "./viewsData";
 // import type { TableColumnsType } from "antd";
 
 // interface DataType  {

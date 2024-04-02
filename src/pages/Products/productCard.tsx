@@ -1,15 +1,17 @@
-// import { ProductData } from "~constanta/productData";
+import { productData } from "~constanta/productData";
 
 const ProductCard = () => {
     return (
         <div>
-            <div>
-                {/* {ProductData.map((item) => (
+            {productData.map((item) => (
+                <div>
                     <div>
-                        <h1>{item.price}</h1>
+                        <img src={item.image} alt='' />
                     </div>
-                ))} */}
-            </div>
+                    <div>{item.title}</div>
+                    <div>{item.price}</div>
+                </div>
+            ))}
         </div>
     );
 };
