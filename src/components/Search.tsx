@@ -1,11 +1,6 @@
 import { Input } from "antd";
 
-const SearchComp = () => {
-    return (
-        <div>
-            <Input style={{ width: 395 }} placeholder='Search' />
-        </div>
-    );
+const FindComp = () => {
+    return <Input style={{ width: 395 }} placeholder='Search' />;
 };
-
-export default SearchComp;
+export default FindComp;

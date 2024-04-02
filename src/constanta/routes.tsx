@@ -1,13 +1,9 @@
 import { ReactNode } from "react";
 import {
-    Appearance,
-    Coupons,
     Dashboard,
-    FlashSales,
     Order,
-    Pages,
     Products,
-    Reviews,
+    ReviewPage,
     Sellers,
     Tools,
     Users,
@@ -38,12 +34,12 @@ export const router: IRouter[] = [
     {
         id: 4,
         path: "/customers",
-        element: <FlashSales />,
+        element: "s",
     },
     {
         id: 5,
         path: "/statistics",
-        element: <Coupons />,
+        element: "h",
     },
     {
         id: 7,
@@ -58,7 +54,7 @@ export const router: IRouter[] = [
     {
         id: 9,
         path: "/offers",
-        element: <Appearance />,
+        element: "d",
     },
     {
         id: 10,
@@ -68,6 +64,6 @@ export const router: IRouter[] = [
     {
         id: 11,
         path: "/reviews",
-        element: <Reviews />,
+        element: <ReviewPage />,
     },
 ];
