@@ -1,11 +1,11 @@
 import { DatePicker, Flex, Input, Select } from "antd";
-import TransactionsHeader from "./features/reviewsHeader";
-import TransactionsList from "./features/reviewsList";
+import ReviewsHeader from "./features/reviewsHeader";
+import ReviewsList from "./features/reviewsList";
 
 const Reviews = () => {
     return (
         <div className='w-full p-[6px]'>
-            <TransactionsHeader />
+            <ReviewsHeader />
             <div className='bg-white rounded-xl p-[20px] mt-[32px] gap-[20px]'>
                 <Flex
                     style={{
@@ -54,7 +54,7 @@ const Reviews = () => {
                         <DatePicker />
                     </Flex>
                 </Flex>
-                <TransactionsList />
+                <ReviewsList />
             </div>
         </div>
     );
