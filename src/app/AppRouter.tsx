@@ -46,7 +46,8 @@ const AppRouter: FC = () => {
                         collapsible
                         collapsed={collapsed}
                         style={{
-                            overflow: "auto",
+                            overflow: "hidden",
+                            height: "100vh",
                             background: "#fff",
                             color: "#FFF",
                         }}>
