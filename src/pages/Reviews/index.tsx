@@ -1,15 +1,6 @@
 import React, { useState } from "react";
 import { DatePicker, Input, Select, Table } from "antd";
 import { ReviewsData } from "./viewsData";
-// import type { TableColumnsType } from "antd";
-
-// interface DataType  {
-//     id: number;
-//     userId: number;
-//     name: string;
-//     rating: string;
-//     date: string;
-// }
 
 const columns = [
     {
