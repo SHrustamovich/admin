@@ -9,7 +9,7 @@ const Sellers = () => {
 
             <div className='bg-white rounded-xl mt-[22px] p-[16px]'>
                 <Flex
-                    className='p-[4px]'
+                    className='p-[5px]'
                     justify='space-between'
                     align='center'>
                     <Input style={{ width: 395 }} placeholder='Search' />
