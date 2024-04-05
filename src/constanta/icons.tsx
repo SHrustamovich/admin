@@ -250,4 +250,43 @@ export const Icons = {
             />
         </svg>
     ),
+    OrdersProfile: (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width={16}
+            height={16}
+            fill='none'
+            {...props}>
+            <path
+                fill='#3167EB'
+                d='M8 8a3.999 3.999 0 1 0 0-8 3.999 3.999 0 1 0 0 8Zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.54 0 1-.45 1-1v-1c0-2.66-5.34-4-8-4Z'
+            />
+        </svg>
+    ),
+    OrdersCar: (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width={22}
+            height={16}
+            fill='none'
+            {...props}>
+            <path
+                fill='#3167EB'
+                d='M18.5 4H16V2c0-1.1-.9-2-2-2H2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2c0 1.66 1.33 3 3 3 1.66 0 3-1.34 3-3h6c0 1.66 1.33 3 3 3 1.66 0 3-1.34 3-3h1c.54 0 1-.45 1-1V8.67c0-.44-.15-.86-.4-1.21L19.29 4.4a.995.995 0 0 0-.79-.4ZM5 14c-.55 0-1-.45-1-1s.45-1 1-1c.54 0 1 .45 1 1s-.46 1-1 1Zm13.5-8.5L20.45 8H16V5.5h2.5ZM17 14c-.55 0-1-.45-1-1s.45-1 1-1c.54 0 1 .45 1 1s-.46 1-1 1Z'
+            />
+        </svg>
+    ),
+    OrdersMap: (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width={16}
+            height={20}
+            fill='none'
+            {...props}>
+            <path
+                fill='#3167EB'
+                d='M8 10c1.1 0 2-.91 2-2a2 2 0 1 0-2 2ZM8 0c4.2 0 8 3.21 8 8.19 0 3.19-2.46 6.93-7.34 11.24-.39.33-.96.33-1.33 0C2.45 15.12 0 11.38 0 8.19 0 3.21 3.79 0 8 0Z'
+            />
+        </svg>
+    )
 };
