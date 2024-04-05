@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import OrdersDetails from "~pages/Orders/OrderDetailsPage";
 import {
     Appearance,
     Customers,
@@ -74,5 +75,10 @@ export const router: IRouter[] = [
         id: 12,
         path: "/settings",
         element: <Settings />,
+    },
+    {
+        id: 13,
+        path: "/ordersdetails",
+        element: <OrdersDetails />,
     },
 ];
