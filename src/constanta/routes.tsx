@@ -1,3 +1,4 @@
+// routes.tsx
 import { ReactNode } from "react";
 import OrdersDetails from "~pages/Orders/OrderDetailsPage";
 import {
@@ -13,11 +14,16 @@ import {
     Statistics,
     Transactions,
 } from "~pages/index";
+import AddProduct from "~pages/Products/features/addProduct";
+import ProductsBrands from "~pages/Products/features/productsBrands";
+import ProductsCategories from "~pages/Products/features/productsCategories";
+import Productlist from "~pages/Products/features/productsList";
 
 interface IRouter {
     id: number;
     path: string;
     element: ReactNode;
+    children?: IRouter[];
 }
 
 export const router: IRouter[] = [
@@ -33,46 +39,66 @@ export const router: IRouter[] = [
     },
     {
         id: 3,
+        path: "/addproduct",
+        element: <AddProduct />,
+    },
+    {
+        id: 4,
+        path: "/productlist",
+        element: <Productlist />,
+    },
+    {
+        id: 5,
+        path: "/categories",
+        element: <ProductsCategories />,
+    },
+    {
+        id: 6,
+        path: "/brands",
+        element: <ProductsBrands />,
+    },
+    {
+        id: 7,
         path: "/order",
         element: <Order />,
     },
     {
-        id: 4,
+        id: 8,
         path: "/customers",
         element: <Customers />,
     },
     {
-        id: 5,
+        id: 9,
         path: "/statistics",
         element: <Statistics />,
     },
     {
-        id: 7,
+        id: 10,
         path: "/transactions",
         element: <Transactions />,
     },
     {
-        id: 8,
+        id: 11,
         path: "/sellers",
         element: <Sellers />,
     },
     {
-        id: 9,
+        id: 12,
         path: "/offers",
         element: <Offers />,
     },
     {
-        id: 10,
+        id: 13,
         path: "/appearance",
         element: <Appearance />,
     },
     {
-        id: 11,
+        id: 14,
         path: "/reviews",
         element: <ReviewPage />,
     },
     {
-        id: 12,
+        id: 15,
         path: "/settings",
         element: <Settings />,
     },
