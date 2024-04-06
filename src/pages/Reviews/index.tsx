@@ -1,48 +1,61 @@
 import React, { useState } from "react";
 import { DatePicker, Input, Select, Table } from "antd";
 import { ReviewsData } from "./viewsData";
-
-const columns = [
-    {
-        title: "ID",
-        dataIndex: "userId",
-    },
-    {
-        title: "Product",
-        dataIndex: "product",
-    },
-    {
-        title: "Name",
-        dataIndex: "name",
-    },
-    {
-        title: "Rating",
-        dataIndex: "rating",
-    },
-    {
-        title: "Date",
-        dataIndex: "date",
-    },
-    {
-        title: "Action",
-        dataIndex: "button",
-    },
-];
+import { StarFilled, StarOutlined } from "@ant-design/icons";
 
 const Reviews: React.FC = () => {
     const [selectedRowKeys, setSelectedRowKeys] = useState<React.Key[]>([]);
+    const [showFilter, setShowFilter] = useState<string>("Show 20"); // State for Show dropdown
 
     const onSelectChange = (newSelectedRowKeys: React.Key[]) => {
         setSelectedRowKeys(newSelectedRowKeys);
     };
 
-    const rowSelection = {
-        selectedRowKeys,
-        onChange: onSelectChange,
+    const handleChangeShow = (value: string) => {
+        setShowFilter(value);
     };
-    const handleChange = (value: string) => {
-        console.log(`selected ${value}`);
+
+    const renderStars = (rating: number) => {
+        const filledStars = Array(Math.floor(rating)).fill(
+            <StarFilled style={{ color: "#fadb14" }} />
+        );
+        const notFilledStars = Array(Math.floor(5 - rating)).fill(
+            <StarOutlined style={{ color: "#fadb14" }} />
+        );
+        return [...filledStars, ...notFilledStars];
     };
+
+    const filteredData = ReviewsData.filter((item) => {
+        return (
+            showFilter === "Show 20" ||
+            showFilter === "Show 30" ||
+            showFilter === "Show 40"
+        );
+    });
+
+    const columns = [
+        {
+            title: "Product",
+            dataIndex: "product",
+        },
+        {
+            title: "Name",
+            dataIndex: "name",
+        },
+        {
+            title: "Rating",
+            dataIndex: "rating",
+            render: (rating: number) => <div>{renderStars(rating)}</div>,
+        },
+        {
+            title: "Date",
+            dataIndex: "date",
+        },
+        {
+            title: "Action",
+            dataIndex: "button",
+        },
+    ];
 
     return (
         <div>
@@ -54,24 +67,10 @@ const Reviews: React.FC = () => {
                     </div>
                     <div className='mr-[10px] gap-[10px]'>
                         <Select
-                            defaultValue='Status'
-                            style={{ width: 120 }}
-                            onChange={handleChange}
-                            options={[
-                                {
-                                    value: "Enable",
-                                    label: "Enable",
-                                },
-                                {
-                                    value: "Disable",
-                                    label: "Disable",
-                                },
-                            ]}
-                        />
-                        <Select
                             defaultValue='Show 20 '
                             style={{ width: 120 }}
-                            onChange={handleChange}
+                            onChange={handleChangeShow}
+                            value={showFilter}
                             options={[
                                 { value: "Show 30", label: "Show 30" },
                                 { value: "Show 40", label: "Show 40" },
@@ -82,10 +81,14 @@ const Reviews: React.FC = () => {
                 </div>
                 <div>
                     <Table
-                        rowSelection={rowSelection}
+                        rowSelection={{
+                            selectedRowKeys,
+                            onChange: onSelectChange,
+                        }}
                         columns={columns}
-                        dataSource={ReviewsData}
-                        pagination={false}></Table>
+                        dataSource={filteredData}
+                        pagination={false}
+                    />
                 </div>
             </div>
         </div>
